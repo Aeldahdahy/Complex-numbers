@@ -15,11 +15,13 @@ int main() {
 	cin >> m2;
 	cout << m2;
 
-
-
 	matrix m3;
 	m3 = m1 + m2;
 	cout<< m3;
+
+	matrix m4;
+	m4 = m1 - m2;
+	cout << m4;
 
 	complex x(0, 0);
 	complex y(1, 1);

@@ -99,6 +99,16 @@ matrix operator+(const matrix& a, const matrix& b) {
 	return newMatrix;
 }
 
+matrix operator-(const matrix& a, const matrix& b) {
+	matrix newMatrix;
+	for (int r = 0; r < a.n; r++) {
+		for (int c = 0; c < a.n; c++) {
+			newMatrix.a[r][c] = a.a[r][c] - b.a[r][c];
+		}
+	}
+	return newMatrix;
+}
+
 matrix& matrix::operator=(const matrix& a) {
 	for (int r = 0; r < a.n; r++) {
 		for (int c = 0; c < a.n; c++) {
@@ -107,3 +117,4 @@ matrix& matrix::operator=(const matrix& a) {
 	}                 
 	return *this;
 }
+

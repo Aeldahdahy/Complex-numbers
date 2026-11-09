@@ -31,6 +31,7 @@ class matrix {
 	friend void operator>>(istream& s, matrix& m);
 	friend ostream& operator<<(ostream& s, matrix& m);
 	friend matrix operator+(const matrix& a, const matrix& b);
+	friend matrix operator-(const matrix& a, const matrix& b);
 
 private:
 	const int n = 2;
